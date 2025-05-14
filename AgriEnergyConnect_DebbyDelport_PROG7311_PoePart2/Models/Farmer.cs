@@ -15,7 +15,6 @@ namespace AgriEnergyConnect_DebbyDelport_PROG7311_PoePart2.Models
 
         public string ContactNumber { get; set; }
 
-        // Navigation property
         public ICollection<Product> Products { get; set; }
     }
 }

@@ -25,7 +25,7 @@ namespace AgriEnergyConnect_DebbyDelport_PROG7311_PoePart2.Controllers
         [Authorize(Roles = "Employee")]
         public IActionResult AddFarmer()
         {
-            return View(); // form to add a farmer
+            return View(); // Form to add a farmer
         }
 
         [Authorize(Roles = "Employee")]

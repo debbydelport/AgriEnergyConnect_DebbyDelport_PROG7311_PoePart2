@@ -8,7 +8,7 @@ namespace AgriEnergyConnect_DebbyDelport_PROG7311_PoePart2.Data
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
 
-        public DbSet<Farmer> Farmers { get; set; } // Add this line
-        public DbSet<Product> Products { get; set; } // Ensure this exists for Products
+        public DbSet<Farmer> Farmers { get; set; } 
+        public DbSet<Product> Products { get; set; } 
     }
 }

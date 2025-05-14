@@ -26,6 +26,7 @@ namespace AgriEnergyConnect_DebbyDelport_PROG7311_PoePart2.Models
             return View(product); // Return the view with validation errors if the model is invalid
         }
 
+        // GET: /Product/MyProducts
         [Authorize(Roles = "Farmer")]
         public async Task<IActionResult> MyProducts()
         {

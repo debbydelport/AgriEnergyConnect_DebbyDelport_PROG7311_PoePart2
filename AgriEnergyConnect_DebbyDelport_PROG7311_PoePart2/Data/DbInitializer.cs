@@ -14,7 +14,7 @@ namespace AgriEnergyConnect_DebbyDelport_PROG7311_PoePart2.Data
             if (context.Farmers.Any() || context.Products.Any())
                 return;
 
-            // Seed Farmers
+            // Populate Farmers
             var farmers = new[]
             {
                 new Farmer { Name = "Thabo Mokoena", Email = "thabo@farmconnect.co.za", ContactNumber = "0821234567" },
@@ -22,9 +22,9 @@ namespace AgriEnergyConnect_DebbyDelport_PROG7311_PoePart2.Data
             };
 
             context.Farmers.AddRange(farmers);
-            context.SaveChanges(); // Needed to generate FarmerIDs
+            context.SaveChanges(); 
 
-            // Seed Products
+            // Populate Products
             var products = new[]
             {
                 new Product

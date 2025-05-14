@@ -88,7 +88,7 @@ namespace AgriEnergyConnect_DebbyDelport_PROG7311_PoePart2.Controllers
                 return RedirectToAction("Dashboard", "Farmer");
             }
 
-            // Default fallback (optional)
+            // Default fallback
             return RedirectToAction("Index", "Home");
         }
 

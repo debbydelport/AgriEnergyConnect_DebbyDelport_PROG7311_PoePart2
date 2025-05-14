@@ -7,6 +7,7 @@ namespace AgriEnergyConnect_DebbyDelport_PROG7311_PoePart2.Data
 {
     public static class RoleSeeder
     {
+
         public static async Task SeedRolesAsync(RoleManager<IdentityRole> roleManager)
         {
             var roles = new[] { "Admin", "User" };
