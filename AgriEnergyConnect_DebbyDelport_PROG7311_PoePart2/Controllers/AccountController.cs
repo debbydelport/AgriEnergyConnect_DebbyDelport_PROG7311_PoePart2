@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 using AgriEnergyConnect_DebbyDelport_PROG7311_PoePart2.Models;
 using AgriEnergyConnect_DebbyDelport_PROG7311_PoePart2.Data;
+using UserRole = AgriEnergyConnect_DebbyDelport_PROG7311_PoePart2.Models.UserRole;
 
 namespace AgriEnergyConnect_DebbyDelport_PROG7311_PoePart2.Controllers
 {

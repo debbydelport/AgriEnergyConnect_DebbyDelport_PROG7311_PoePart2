@@ -4,6 +4,7 @@ namespace AgriEnergyConnect_DebbyDelport_PROG7311_PoePart2.Models
     {
         Admin,
         Farmer,
-        Supplier
+        Supplier,
+        Employee
     }
 }
