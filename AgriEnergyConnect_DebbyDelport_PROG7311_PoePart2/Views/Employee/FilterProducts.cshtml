@@ -1,0 +1,58 @@
+﻿@{
+    ViewData["Title"] = "Filter Products";
+}
+
+<h2>Filter Products</h2>
+
+<form asp-action="FilterProducts" asp-controller="Employee" method="get">
+    <div>
+        <label for="StartDate">Start Date:</label>
+        <input type="date" id="StartDate" name="StartDate" />
+    </div>
+    <div>
+        <label for="EndDate">End Date:</label>
+        <input type="date" id="EndDate" name="EndDate" />
+    </div>
+    <div>
+        <label for="ProductType">Product Type:</label>
+        <select id="ProductType" name="ProductType">
+            <option value="">-- Select Product Type --</option>
+            <option value="Vegetables">Vegetables</option>
+            <option value="Fruits">Fruits</option>
+            <option value="Dairy">Dairy</option>
+            <option value="Grains">Grains</option>
+        </select>
+    </div>
+    <button type="submit">Filter</button>
+</form>
+
+@if (Model != null && Model.Any())
+{
+    <h3>Filtered Products</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Farmer</th>
+                <th>Type</th>
+                <th>Date Added</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var product in Model)
+            {
+                <tr>
+                    <td>@product.Name</td>
+                    <td>@product.FarmerName</td>
+                    <td>@product.Type</td>
+                    <td>@product.DateAdded.ToShortDateString()</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No products found matching the criteria.</p>
+}
+

@@ -1,0 +1,36 @@
+﻿@model List<AgriEnergyConnect_DebbyDelport_PROG7311_PoePart2.Models.Farmer>
+
+@{
+    ViewData["Title"] = "View Farmers";
+}
+
+<h2>Farmers List</h2>
+
+@if (Model != null && Model.Any())
+{
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Address</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var farmer in Model)
+            {
+                <tr>
+                    <td>@farmer.Name</td>
+                    <td>@farmer.Email</td>
+                    <td>@farmer.Phone</td>
+                    <td>@farmer.Address</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No farmers have been added yet.</p>
+}
