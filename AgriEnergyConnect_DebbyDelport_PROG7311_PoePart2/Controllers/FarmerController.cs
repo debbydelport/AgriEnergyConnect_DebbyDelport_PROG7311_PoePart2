@@ -4,9 +4,6 @@ using Microsoft.AspNetCore.Mvc;
 using AgriEnergyConnect_DebbyDelport_PROG7311_PoePart2.Data;
 using AgriEnergyConnect_DebbyDelport_PROG7311_PoePart2.Models;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace AgriEnergyConnect_DebbyDelport_PROG7311_PoePart2.Controllers
 {
@@ -43,6 +40,7 @@ namespace AgriEnergyConnect_DebbyDelport_PROG7311_PoePart2.Controllers
 
                 model.FarmerID = user.Id; 
                 _context.Products.Add(model);
+                _context.SaveChanges();
                 await _context.SaveChangesAsync();
 
                 return RedirectToAction("MyProducts");
