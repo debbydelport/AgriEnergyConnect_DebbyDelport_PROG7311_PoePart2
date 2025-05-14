@@ -9,7 +9,7 @@ namespace AgriEnergyConnect_DebbyDelport_PROG7311_PoePart2.Data
     {
         public static async Task SeedUsersAsync(UserManager<IdentityUser> userManager)
         {
-            // Example logic for seeding users
+            // Example logic for populating users
             var adminEmail = "admin@example.com";
             var adminPassword = "Admin@123";
 

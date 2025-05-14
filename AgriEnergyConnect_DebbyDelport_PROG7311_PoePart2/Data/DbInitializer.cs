@@ -10,7 +10,7 @@ namespace AgriEnergyConnect_DebbyDelport_PROG7311_PoePart2.Data
             var context = new ApplicationDbContext(
                 serviceProvider.GetRequiredService<DbContextOptions<ApplicationDbContext>>());
 
-            // Exit if already seeded
+            // Exit if already populated
             if (context.Farmers.Any() || context.Products.Any())
                 return;
 

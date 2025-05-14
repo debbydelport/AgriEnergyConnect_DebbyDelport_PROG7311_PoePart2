@@ -32,6 +32,6 @@ namespace AgriEnergyConnect_DebbyDelport_PROG7311_PoePart2.Data
         public string Email { get; set; }
         public string Password { get; set; }
         public string ConfirmPassword { get; set; }
-        public UserRole? UserRole { get; set; } // Nullable to handle validation
+        public UserRole? UserRole { get; set; } 
     }
 }

@@ -19,7 +19,7 @@ namespace AgriEnergyConnect_DebbyDelport_PROG7311_PoePart2.Models
         public string ConfirmPassword { get; set; }
 
         [Display(Name = "Register as Employee")]
-        public bool IsEmployee { get; set; } // ✅ Checkbox
+        public bool IsEmployee { get; set; } // Checkbox
         public UserRole UserRole { get; internal set; }
     }
 }
