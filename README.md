@@ -2,13 +2,37 @@
 
 ## Project Overview
 
-The online application **AgriEnergy Connect** is a prototype.  In order to facilitate effective administration of agricultural goods, farmer profiles, and product monitoring, the platform links **Farmers** with **Employees**.  **ASP.NET Core Razor Pages**, **Entity Framework Core**, and **SQL Server LocalDB** are used in the system's construction.
+- The online application **AgriEnergy Connect** is a prototype.  In order to facilitate effective administration of agricultural goods, farmer profiles, and product monitoring, the platform links **Farmers** with **Employees**.  **ASP.NET Core Razor Pages**, **Entity Framework Core**, and **SQL Server LocalDB** are used in the system's construction.
 
 ---
 
 ## Purpose of the Project
 
 - The system's goal is to consolidate and digitize farmer product submissions so that data handling can be done more effectively.  Employees can easily filter agricultural data and manage farmer profiles thanks to it. The system's overall goal is to help all agricultural stakeholders make well-informed decisions by increasing data visibility and traceability.
+---
+
+## Ways to Make This Prototype Function  (One step at a time)
+
+1.	Visit the GitHub page and download the project:  GitHub AgriEnergyConnect o Select "Download ZIP" by clicking the green "Code" button, or use git clone to create a copy of it: https://github.com/debbydelport/AgriEnergyConnect_DebbyDelport_PROG7311_PoePart2.git
+
+2.	Launch the Visual Studio project.
+Launch Visual Studio 2022 or a later version.
+Select Project/Solution under File > Open.
+AgriEnergyConnect_DebbyDelport_PROG7311_PoePart2.sln is the file to open.
+
+3.	Restore Dependencies
+ When you open the project in Visual Studio, NuGet packages will be immediately restored.  To manage NuGet packages for Solution, go to Tools > NuGet Package Manager.
+ If necessary, click Restore.
+
+5.	Launch the App o Click the Run button (green triangle at the top) or press F5. 
+By doing this, the project will be built and your browser will open the website.
+
+6.	 What Takes Place Next? 
+ The database will be automatically created by the system, and sample data (farmers and goods) will be added. 
+You may now sign up as an employee or farmer. 
+Farmers may add and see items on their Farmer Dashboard after logging in. 
+Employees will view/filter all items and manage farmers via their Employee Dashboard.
+
 ---
 
 ## User Roles
